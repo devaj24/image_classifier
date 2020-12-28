@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-------------------Barcode Results--------------->
+<div class="result">
+    <div class="result-col tag">
+        <img class="upimage" src="data:image/png;base64,{{image}}" />
+        <h2 class="result-tag">
+            Barcode Data
+        </h2>
+        <ul>
+            {% for barcodes in barcode%}
+            <li>
+                {% for t, p in barcodes.items()%}
+                <p>
+                    {{t}} : {{p}}
+                </p>
+                {% endfor %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

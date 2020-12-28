@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-------------------Container for project-------------->
+<div class="container">
+    <h1 class="title">Barcode Reader</h1>
+    <h3 class="description">Please Upload an Image containing barcode</h3>
+    <div class="form">
+        <form method="POST" action="/barcode-result" enctype="multipart/form-data">
+            <label for="image">Upload Image</label>
+            <input class="file" type="file" id="file" name="image">
+            <input class="submit" type="submit" onclick="loading();" />
+        </form>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    // <![CDATA[
+    function loading() {
+        $("#loading").show();
+        $("#content").hide();
+    }
+    // ]]>
+</script>
+{% endblock %}

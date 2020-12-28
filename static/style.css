@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fondamento', cursive;;
+}
+
+/*------------header--------------*/
+header {
+    width: 100%;
+    background-color: rgb(0,0,0);
+}
+
+.header-heading {
+    color: rgb(255,255,255);
+    padding-top: 4%;
+    padding-left: 10%;
+
+}
+
+.header-link {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+.header-link:visited {
+    text-decoration: none;
+}
+.header-link:hover {
+    text-decoration: none;
+}
+.header-link:focus {
+    text-decoration: none;
+}
+.header-link:active {
+    text-decoration: none;
+}
+
+/*------------Hero Section------------*/
+.hero-container {
+    width: 100%;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 4em;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .hero-text {
+        font-size: 1.5em;
+    }
+}
+/*---------------Tech Used---------------*/
+.tech {
+    margin-top: 5px;
+}
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-name {
+    width: 25%;
+    margin: 5%;
+}
+
+.tech-icon {
+    width: 70%;
+}
+
+.tech-title {
+    text-align: center;
+    border-bottom: 10px solid blue;
+}
+
+.tech-description {
+    font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .tech-description {
+        font-size: 1em;
+    }
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+}
+
+/*----------------Image Classifier--------------*/
+.project {
+    margin-top: 2px;
+}
+.imgc {
+    background-color: rgb(180,180,180);
+}
+
+.barcode {
+    background-color: rgb(200,200,200);
+}
+
+.project-button-link {
+    text-decoration: none;
+    color: white;
+}
+
+.project-button-link:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.project-title {
+    text-align: center;
+}
+
+.project-description {
+    font-size: 3em;
+}
+
+.project-button {
+    display: block;
+    background-color: #399cbd;
+    border: none;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0.35em 1.2em;
+}
+
+
+@media (max-width: 600px) {
+    .project-description {
+        font-size: 1em;
+    }
+
+    .project-button {
+        font-size: 1em;
+    }
+}
+
+/*----------------Made By----------------*/
+.madeby {
+    background-color: rgb(0,0,0);
+    color: white;
+    margin-top: 12%;
+}
+
+/*-------------------Cintainer for forms-------------*/
+
+.title {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.submit {
+    background-color: #00ccff;
+    border-radius: 8%;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+}
+
+/*-----------------Results-----------------*/
+.result {
+    margin-top: 10px;
+}
+
+.upimage {
+    width: 80%;
+    margin-left: 12%
+}
+
+.tag {
+    margin: 10%;
+}
+
+/*--------------loading gif---------------*/
+div#loading {
+    width: 100%;
+    display: none;
+    cursor: wait;
+}
+
+.loader-gif {
+    width: 100%;
+}
+
+.loader-gif2 {
+    display: inline;
+}
+
+.loader-text {
+    display: inline;
+    font-size: 2em;
+}

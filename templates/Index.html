@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+<!----------------------Hero Section------------>
+<div class="hero-container">
+    <img class="hero-image" src="{{url_for('static', filename='img/bg.jpeg')}}" />
+    <h3 class="hero-text">
+        Image Classifier &
+        Barcode Reader
+    </h3>
+</div>
+<!---------------------Technology Used------------->
+<div class="tech">
+    <h2 class="tech-title">Technology Used</h2>
+    <div class="tech-list">
+        <div class="tech-name grow">
+            <img class="tech-icon" src="{{url_for('static', filename='img/flask.png')}}" />
+            <p class="tech-description ">
+                Flask, a backend web framework for making web apps
+            </p>
+        </div>
+        <div class="tech-name grow">
+            <img class="tech-icon" src="{{url_for('static', filename='img/html.png')}}" />
+            <p class="tech-description ">
+                HTML & CSS for making frontend
+            </p>
+        </div>
+        <div class="tech-name grow">
+            <img class="tech-icon" src="{{url_for('static', filename='img/imagga.png')}}">
+            <p class="tech-description ">
+                Imagga API for AI classification models
+            </p>
+        </div>
+        <div class="tech-name grow">
+            <img class="tech-icon" src="{{url_for('static', filename='img/heroku.png')}}">
+            <p class="tech-description ">
+                Heroku, a cloud hosting service for hosting websites
+            </p>
+        </div>
+    </div>
+</div>
+
+<!---------------Image classifier----------->
+<div class="project imgc">
+    <h1 class="project-title">
+        Image Classifier
+    </h1>
+    <p class="project-description">
+        An AI model to classify and tag images into different categories.
+    </p>
+    <button class="project-button">
+        <a class="project-button-link" href="{{url_for('image_classifier')}}">Go to Image Classifier</a></button>
+</div>
+<!---------------Barcode Reader---------->
+<div class="project barcode">
+    <h1 class="project-title">
+        Barcode Reader
+    </h1>
+    <p class="project-description">
+        An AI model to read and analyse barcodes.
+    </p>
+    <button class="project-button" href="/barcode-reader">
+        <a class="project-button-link" href="{{url_for('barcode_reader')}}">Go to Barcode Reader</a>
+    </button>
+</div>
+{% endblock %}

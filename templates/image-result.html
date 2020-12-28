@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-------------------Coassification Result--------------->
+<div class="content">
+    <img class="upimage" src="data:image/png;base64, {{image}}" />
+    <div class="result">
+        <div class="result-col tag">
+            <h4 class="result-tag">
+                The AI model has classified your image into following types:
+            </h4>
+            <h4>Note categories are written along with the confidence of prediction by AI.</h4>
+            {% for tags in tag%}
+            {% for t, p in tags.items() %}
+            <ul>
+                <li>{{t[0]|upper}}{{t[1:]}} : {{p}}% Confidence</li>
+            </ul>
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

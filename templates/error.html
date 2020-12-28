@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block content%}
+<div>
+    {{error|safe}}
+</div>
+<div style="margin-top: 10px">
+    <button class="project-button">
+        <a class="project-button-link" href="{{url_for('main')}}">Home Page</a></button>
+</div>
+{% endblock%}

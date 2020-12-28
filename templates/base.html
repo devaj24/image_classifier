@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!---------------------Header------------>
+    <header>
+        <h1 class="header-heading"><a class="header-link" href="/">AI Project</a></h1>
+    </header>
+
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div id="loading">
+        <img class="loader-gif" src="{{url_for('static', filename='img/loader.gif')}}" />
+        <h2 class="loader-text">Analysing and Classifying your Image
+        </h2>
+        <img class="loader-gif2" src="{{url_for('static', filename='img/loader2.gif')}}" />
+    </div>
+</body>
+</html>
